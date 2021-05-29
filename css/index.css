@@ -418,6 +418,11 @@ div.card.show div.flap2 {
 
 /* footer section */
 .footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
   background-color:black;
   background-size:cover;
   text-align:center;
