@@ -304,7 +304,8 @@ div.card {
   z-index: 1;
 }
 div.card img {
-  max-width: 300px;
+  max-width: 317px;
+  max-height: 240px;
 }
 div.card .card__image-holder {
   background: rgba(0, 0, 0, 0.1);
