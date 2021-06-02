@@ -1,709 +1,794 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-        <script type="text/javascript" src="navbar.js"></script>
-        <script src="https://kit.fontawesome.com/53e3f996b3.js" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather&family=Nunito:wght@200&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="navbar.js"></script>
+  <script src="https://kit.fontawesome.com/53e3f996b3.js" crossorigin="anonymous"></script>
+</head>
 
 
-  <body>
-    <nav class="nav fixed-top affix">
-      <div class="container-fluid">
-          <div class="logo">
-              <a href="#">            
-                  <img src="img/club_logo.png" class="robotics-logo" />
-              </a>
-          </div>
-          <div id="mainListDiv" class="main_list">
-              <ul class="navlinks">
-                  <li><a href="index.html">About</a></li>
-                  <li><a href="project.html">Projects</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="resources.html">Resources</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </div>
-          <span class="navTrigger">
-              <i></i>
-              <i></i>
-              <i></i>
-          </span>
+<body>
+  <nav class="nav fixed-top affix">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="#">
+          <img src="img/club_logo.png" class="robotics-logo" />
+        </a>
       </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="index.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
   </nav>
- 
-  <div class="project-section pt-3 pb-5 mt-5" id ="projectSection">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-					<div class="section-title text-center">
-						<h2><span>Gallery</span></h2>
-					</div>
-				</div>
-                <div class="cards">
-                  
-                    <div id="myBtnContainer">
-                      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                      <button class="btn" onclick="filterSelection('cars')"> Year-2019</button>
-                      <button class="btn" onclick="filterSelection('animals')"> Year-2020</button>
-                        <button class="btn" onclick="filterSelection('fruits')"> year-2018</button>
-                    </div>
-                    
-                    <h2 class="section-title text-white mt-5">FUTURE<span class="span-title" style="color:black">PROJECTS</span></h2>
-                    <div class="card filterDiv animals">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/Yuvaan.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Yuvaan (Mars Rover)
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:purple">Upcoming</p>
-                          Ever wondered what goes inside the core of a hyped space expedition program. We always chatter about reaching out to a planet ; but once landed then what? With this curiosity blinking in our mind we at Robotics club IIT Guwahati have endeavored to rekindle this beauty through "YUVAAN".
-                        </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <h2 class="section-title text-white mt-5">ONGOING<span class="span-title" style="color:black">PROJECTS</span></h2>
-                    <div class="card filterDiv cars">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/21. ar_glasses.png" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Artificial-reality Glasses
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                            <p style="color:blue">Ongoing</p>
-                             <p style="color:orange">Mentor: <span style="color:black">Devesh Gupta</span></p>
-                             We have made a pair of glasses that will do more than just correct your vision.
-                        </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    
-                    <div class="card filterDiv cars">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/Yuvaan.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Drivezee
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Yash Joshi</span></p>
-                          We will design an IC engine operated small scale bot. Phase one of the project will be Aimed at Designing an RC operated Engine car. This will get you acquainted with the type of work required for a bigger next phase. Phase 2 will be more unique to us and focused on the transmission part (also known as the drive module of a vehicle which basically transfers the power from engine to wheels.) 
-                        </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                     <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/Yuvaan.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Exoskeleton
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                             <p style="color:orange">Mentor: <span style="color:black">Saranyaa Thiagarajan</span></p>
-                        An exoskeleton is a wearable electromechanical structure that is intended to resemble and allow movements in a manner similar to the human skeletal system. You can think of it like a miniature Iron man suit. The project is about creating an assistive exoskeleton for the shoulders. 
-                        </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                     <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/21. fido.png" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            FiDo
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Sree Rakhi Kudipudi</span></p>
-                          FiDo is an all-terrain bot that can roll on any surface due to its wheel-like shape and can go anywhere within its wireless range controlled by the joystick. It has many applications for security, surveillance purposes as it can camouflage with its environment and can act as your assistant too.
-                         </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                      <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/21. awwc.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Marjanator
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Nahush Bhamre</span></p>
-                             This project aims to make an autonomous bot that will act as a boat and will collect trash or waste floating on the surface of water bodies.   
-                        </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                     <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/21. pipe.png" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Pipe Traversing Bot
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Shreya Singh</span></p>
-                         The gas pipeline is subjected to periodic inspection and maintenance. Earlier, this was carried out manually. But nowadays, it can be easily done by a pipe traversing bot which can travel through these pipes, inspect and send the results periodically, so that we can reach directly to the damaged pipe location without disturbing the other pipes. They can even travel to the pipe where it is difficult for a human to reach. They can be even trained to repair the defect which in turn saves money, time, and labor.
-                         </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                     <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/21. rob_arm.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Robotic Arm
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Ritesh Ranjan & Sanjana Reddy Kalsani</span></p>
-                         With the advancement of technology, the need for automation is increasing exponentially. From industry to home appliances and from assisting doctors to use in research, robotic arm plays an important role. We are going to make a robotic arm with 6 degrees of freedom. It will have the ability to fold in a little space.  
-                         </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                     <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/21. talk.jpeg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Talking Bot
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Rahul Aggarwal</span></p>
-                         In this project, we have built a voice recognition chatbot using sequence model and Natural Language Programming. Inspired from Amazon Alexa and apple Siri.
-                         </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                     <div class="card">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/Yuvaan.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Wall Plotter
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:blue">Ongoing</p>
-                            <p style="color:orange">Mentor: <span style="color:black">Varshith Kancharla</span></p>
-                         In this project we will be taking an image as an input and then, according to the image, will control the path of the drawing part (pen) and draw it on the wall. 
-                         </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <h2 class="section-title text-white mt-5">COMPLETED<span class="span-title" style="color:black">PROJECTS</span></h2>
-                    <div class="card filterDiv fruits">
-                      <div class="card__image-holder">
-                        <img class="card__image" src="img/projects/biped.jpg" width="317" height="240" alt="wave" />
-                      </div>
-                      <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                          <span class="left"></span>
-                          <span class="right"></span>
-                        </a>
-                        <h2>
-                            Biped
-                        </h2>
-                      </div>
-                      <div class="card-flap flap1">
-                        <div class="card-description">
-                             <p style="color:green">Completed</p>
-                          An machine that usually moves in a bipedal manner is known as a biped, meaning "two feet". Our project  BIPED has 10 Degree of Freedom is a bot designed to walk in flat surfaces.
-                        </div>
-                        <div class="card-flap flap2">
-                          <div class="card-actions">
-                            <a href="#" class="btn">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    
-                    <div class="card filterDiv fruits">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/20. planar_man.png" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Planar manipulator
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            The main focus of the project is to design a planar robotic arm that can resemble a human hand and can do all the work which can be done in a plane. It can write according to pattern drawn on screen, travel a set path, pick and place objects.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/20. replication_bot.jpg" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Replication Bot
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            This is a Replication Robot which shows the replication of motion of robots using simple structures. This project is meant to designing and developing of a microcontroller (ATmega) based robotic arm and a replica for it’s movement. 
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/20. drawing-arm.png" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Robotic Drawing Machine
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            Perhaps you have never been gifted at drawing, or you don’t have time to do it yourself, so why not let a simple 2-D Robotic arm draw for you. This simple two axis device can accurately move a pen to draw out anything.
-                            </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/20. shapeshift.png"  alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Shape Shifter
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                             Our project was inspired by DARPA’s shapeshifting wheel – a wheel that can change its shape adapting the terrain, making it an all-terrain traveling vehicle.
-                           </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/20. wall_follow.png" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Wall Follower
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            Wall follower is a arduino based robot which follows a straight path at a fixed distance from the wall.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/20. warehouse.jpg" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Warehouse Management
-                          </h2>
-                        </div> 
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            We  developed a fully autonomous bot which goes to its targeted object (with obstacles on its way), lifts the object and then  takes it to  the desired  location. Our target was to automate warehouse inventory management.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                      <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. augmata.png" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                              <h2>
-                              Augmata
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                             Augmented reality (AR) is a technology that allows the enhancement of the real world with a computer generated virtual world. This virtual world can be simple or complex, and can contain sounds, images and even interactive virtual objects that appear to be real.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. ballet_of_bot.png" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Ballet of bots
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                             The goal of this project is to effectively control a weighted ball on a flat surface. The entire project is built around using a PID method to properly move the ball to the setpoint.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. cyrus.jpg" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                             Cyrus
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                             In this project we have used cheap sensors to track the source of sound, interpret a sound source, calculate the data and exhibit the correct output to the motors, with the help of Voice Recognition Module, so that a vehicle can steer and go to the position of the sound source.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>  
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. lazy_fill.jpg" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                              Lazy Fill
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            We looked into the simple, everyday task of filling the water bottles and realised that a task this simple and frequent, still isn’t as easy and efficient as it should have been. The number of steps involved to have this task done can be reduced with help of technology and innovation.
-                           </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. rearrange_robotic_arm.png" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                             Rearranging Robotic Arm
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            The aim of the project is to make a Pole Climbing Robot that can climb poles and can be modified further for fixing any issues related to power transmission lines, bridge repair and maintenance, climbing lamp posts efficiently.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. rubiks.jpeg" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                             Rubik's Cube Solver
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            The aim of the project is to make a Pole Climbing Robot that can climb poles and can be modified further for fixing any issues related to power transmission lines, bridge repair and maintenance, climbing lamp posts efficiently.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>                    
-                    
-                    
-                    <div class="card">
-                        <div class="card__image-holder">
-                          <img class="card__image" src="img/projects/19. stair_climber.jpg" width="317" height="240" alt="wave" />
-                        </div>
-                        <div class="card-title">
-                          <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                          </a>
-                          <h2>
-                             Stair Climbing Robot
-                          </h2>
-                        </div>
-                        <div class="card-flap flap1">
-                          <div class="card-description">
-                               <p style="color:green">Completed</p>
-                            The aim of the project is to make a Pole Climbing Robot that can climb poles and can be modified further for fixing any issues related to power transmission lines, bridge repair and maintenance, climbing lamp posts efficiently.
-                          </div>
-                          <div class="card-flap flap2">
-                            <div class="card-actions">
-                              <a href="#" class="btn">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>  
-                      
-                    
-<!--                     <div class="card">
+
+  <div class="project-section pt-3 pb-5 mt-5" id="projectSection">
+    <div class="container-fluid">
+      <div id="myBtnContainer">
+        <button class="btn active text-white" onclick="filterSelection('all')">View All</button>
+        <button class="btn text-white" onclick="filterSelection('y21')">Year-21</button>
+        <button class="btn text-white" onclick="filterSelection('y20')">Year-20</button>
+        <button class="btn text-white" onclick="filterSelection('y19')">Year-19</button>
+      </div>
+      <div class="row">
+
+        <div class="cards">
+
+
+
+          <div class="filterDiv y21">
+
+            <h2 class="section-title text-white mt-5">FUTURE<span class="span-title" style="color:#77E6EE">
+                PROJECTS</span></h2>
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/Yuvaan.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Yuvaan (Mars Rover)
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:purple">Upcoming</p>
+                  Ever wondered what goes inside the core of a hyped space expedition program. We always chatter about
+                  reaching out to a planet ; but once landed then what? With this curiosity blinking in our mind we at
+                  Robotics club IIT Guwahati have endeavored to rekindle this beauty through "YUVAAN".
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="section-title text-white mt-5">ACADEMIC YEAR<span class="span-title" style="color:#77E6EE">
+                2021</span></h2>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. ar_glasses.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Artificial-reality Glasses
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Devesh Gupta</span></p>
+                  We have made a pair of glasses that will do more than just correct your vision.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. drivezee.jpeg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Drivezee
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Yash Joshi</span></p>
+                  We will design an IC engine operated small scale bot. Phase one of the project will be Aimed at
+                  Designing an RC operated Engine car. This will get you acquainted with the type of work required for a
+                  bigger next phase. Phase 2 will be more unique to us and focused on the transmission part (also known
+                  as
+                  the drive module of a vehicle which basically transfers the power from engine to wheels.)
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. exoskeleton.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Exoskeleton
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Saranyaa Thiagarajan</span></p>
+                  An exoskeleton is a wearable electromechanical structure that is intended to resemble and allow
+                  movements in a manner similar to the human skeletal system. You can think of it like a miniature Iron
+                  man suit. The project is about creating an assistive exoskeleton for the shoulders.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. fido.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  FiDo
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Sree Rakhi Kudipudi</span></p>
+                  FiDo is an all-terrain bot that can roll on any surface due to its wheel-like shape and can go
+                  anywhere
+                  within its wireless range controlled by the joystick. It has many applications for security,
+                  surveillance purposes as it can camouflage with its environment and can act as your assistant too.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. awwc.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Marjanator
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:#000000">Nahush Bhamre</span></p>
+                  This project aims to make an autonomous bot that will act as a boat and will collect trash or waste
+                  floating on the surface of water bodies.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. pipe.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Pipe Traversing Bot
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Shreya Singh</span></p>
+                  The gas pipeline is subjected to periodic inspection and maintenance. Earlier, this was carried out
+                  manually. But nowadays, it can be easily done by a pipe traversing bot which can travel through these
+                  pipes, inspect and send the results periodically, so that we can reach directly to the damaged pipe
+                  location without disturbing the other pipes. They can even travel to the pipe where it is difficult
+                  for
+                  a human to reach. They can be even trained to repair the defect which in turn saves money, time, and
+                  labor.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. rob_arm.jpg" width="317" height="240" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Robotic Arm
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Ritesh Ranjan & Sanjana Reddy Kalsani</span>
+                  </p>
+                  With the advancement of technology, the need for automation is increasing exponentially. From industry
+                  to home appliances and from assisting doctors to use in research, robotic arm plays an important role.
+                  We are going to make a robotic arm with 6 degrees of freedom. It will have the ability to fold in a
+                  little space.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. talk.jpeg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Talking Bot
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Rahul Aggarwal</span></p>
+                  In this project, we have built a voice recognition chatbot using sequence model and Natural Language
+                  Programming. Inspired from Amazon Alexa and apple Siri.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/21. wall_plotter.jpeg" width="317" height="240" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Wall Plotter
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:blue">Ongoing</p>
+                  <p style="color:orange">Mentor: <span style="color:black">Varshith Kancharla</span></p>
+                  In this project we will be taking an image as an input and then, according to the image, will control
+                  the path of the drawing part (pen) and draw it on the wall.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="https://www.youtube.com/watch?v=v-1l3Zg49F0" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="filterDiv y20">
+
+            <h2 class="section-title text-white mt-5">TECHEVINCE<span class="span-title" style="color:#77E6EE">
+                2020</span></h2>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/biped.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Biped
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  An machine that usually moves in a bipedal manner is known as a biped, meaning "two feet". Our project
+                  BIPED has 10 Degree of Freedom is a bot designed to walk in flat surfaces.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/20. planar_man.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Planar manipulator
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  The main focus of the project is to design a planar robotic arm that can resemble a human hand and can
+                  do all the work which can be done in a plane. It can write according to pattern drawn on screen,
+                  travel
+                  a set path, pick and place objects.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/20. replication_bot.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Replication Bot
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  This is a Replication Robot which shows the replication of motion of robots using simple structures.
+                  This project is meant to designing and developing of a microcontroller (ATmega) based robotic arm and
+                  a
+                  replica for it’s movement.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/20. drawing-arm.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Robotic Drawing Machine
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  Perhaps you have never been gifted at drawing, or you don’t have time to do it yourself, so why not
+                  let
+                  a simple 2-D Robotic arm draw for you. This simple two axis device can accurately move a pen to draw
+                  out
+                  anything.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/20. shapeshift.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Shape Shifter
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  Our project was inspired by DARPA’s shapeshifting wheel – a wheel that can change its shape adapting
+                  the
+                  terrain, making it an all-terrain traveling vehicle.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/20. wall_follow.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Wall Follower
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  Wall follower is a arduino based robot which follows a straight path at a fixed distance from the
+                  wall.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/20. warehouse.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Warehouse Management
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  We developed a fully autonomous bot which goes to its targeted object (with obstacles on its way),
+                  lifts
+                  the object and then takes it to the desired location. Our target was to automate warehouse inventory
+                  management.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="filterDiv y19">
+
+            <h2 class="section-title text-white mt-5">TECHEVINCE<span class="span-title" style="color:#77E6EE">
+                2019</span></h2>
+
+
+            <div class="card y19">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. augmata.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Augmata
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  Augmented reality (AR) is a technology that allows the enhancement of the real world with a computer
+                  generated virtual world. This virtual world can be simple or complex, and can contain sounds, images
+                  and
+                  even interactive virtual objects that appear to be real.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card y19">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. ballet_of_bot.png" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Ballet of bots
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  The goal of this project is to effectively control a weighted ball on a flat surface. The entire
+                  project
+                  is built around using a PID method to properly move the ball to the setpoint.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. cyrus.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Cyrus
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  In this project we have used cheap sensors to track the source of sound, interpret a sound source,
+                  calculate the data and exhibit the correct output to the motors, with the help of Voice Recognition
+                  Module, so that a vehicle can steer and go to the position of the sound source.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. lazy_fill.jpg" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Lazy Fill
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  We looked into the simple, everyday task of filling the water bottles and realised that a task this
+                  simple and frequent, still isn’t as easy and efficient as it should have been. The number of steps
+                  involved to have this task done can be reduced with help of technology and innovation.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. rearrange_robotic_arm.png" width="317" height="240"
+                  alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Rearranging Robotic Arm
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  This project features a 4R arm coupled with a vision system and a control system which aims at
+                  solving two major problems : Sorting and Rearranging.The vision system aims at detecting and classifying
+                  objects, allowing the arm to avoid obstacles, identify targets and do motion planning. The control system
+                  allows the arm to plan trajectories while maintaining greater accuracy.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. rubiks.jpeg" width="317" height="240" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Rubik's Cube Solver
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  This is a Rubik’s cube solving robot which scans the cube and solves the cube by rotating the faces with stepper motors.
+                  The setup is made of acrylic , there are 4 pillars on a base with stepper motors attached to it.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card__image-holder">
+                <img class="card__image" src="img/projects/19. stair_climber.jpg" width="317" height="240" alt="wave" />
+              </div>
+              <div class="card-title">
+                <a href="#" class="toggle-info btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Stair Climbing Robot
+                </h2>
+              </div>
+              <div class="card-flap flap1">
+                <div class="card-description">
+                  <p style="color:green">Completed</p>
+                  The bot is moving on its six wheels powered by high torque DC motors which enables it to climb up the stair with an ease. The bot is equipped with a self adjusting plate on its top(just like a camera gimbal) which helps to keep the load always in horizontal position. 
+                  The rear arms are rigid while the front arm (basically an elbow joint) is flexible and free to rotate about a horizontal axis thus enabling the front part to get lifted up whenever it encounter a stair. The bot is manually controlled by node MCU.
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="btn">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!--                     <div class="card">
                         <div class="card__image-holder">
                           <img class="card__image" src="img/projects/" width="317" height="240" alt="wave" />
                         </div>
@@ -727,35 +812,35 @@
                           </div>
                         </div>
                       </div>     -->
-                        
-                  </div>
-           
-                  </div>
-                  </div>
-            </div>
-    </div> 
 
-   <div class="footer" id="Contact">
-        <p class="footer-title"> connect with us</p>
-        <hr style="border-color:white; width:150px">
-        <a href="mailto:roboclubiitg@gmail.com"> 
-            <i class="fas fa-envelope footer-icon"></i>
-        </a>
-        <a href="https://www.facebook.com/robotics.iitg"> 
-            <i class="fab fa-facebook-square footer-icon"></i>
-        </a>
-        <a href="https://www.instagram.com/roboclubiitg/"> 
-            <i class="fab fa-instagram footer-icon"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/robotics-club-iitg/mycompany/"> 
-            <i class="fab fa-linkedin footer-icon"></i>
-        </a>
-        <a href=""> 
-            <i class="fas fa-phone-alt footer-icon"></i>
-        </a>
-    </div> 
-    
-    <script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="Contact">
+    <p class="footer-title"> connect with us</p>
+    <hr style="border-color:white; width:150px">
+    <a href="mailto:roboclubiitg@gmail.com">
+      <i class="fas fa-envelope footer-icon"></i>
+    </a>
+    <a href="https://www.facebook.com/robotics.iitg">
+      <i class="fab fa-facebook-square footer-icon"></i>
+    </a>
+    <a href="https://www.instagram.com/roboclubiitg/">
+      <i class="fab fa-instagram footer-icon"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/robotics-club-iitg/mycompany/">
+      <i class="fab fa-linkedin footer-icon"></i>
+    </a>
+    <a href="">
+      <i class="fas fa-phone-alt footer-icon"></i>
+    </a>
+  </div>
+
+  <script>
     filterSelection("all")
     function filterSelection(c) {
       var x, i;
@@ -772,7 +857,7 @@
       arr1 = element.className.split(" ");
       arr2 = name.split(" ");
       for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
       }
     }
 
@@ -782,7 +867,7 @@
       arr2 = name.split(" ");
       for (i = 0; i < arr2.length; i++) {
         while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
         }
       }
       element.className = arr1.join(" ");
@@ -792,114 +877,70 @@
     var btnContainer = document.getElementById("myBtnContainer");
     var btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
+      btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
       });
     }
-    </script>
-      
-    <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+  </script>
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+  <script>
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+    $('.navTrigger').click(function () {
+      $(this).toggleClass('active');
+      console.log("Clicked menu");
+      $("#mainListDiv").toggleClass("show_list");
+      $("#mainListDiv").fadeIn();
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-    
-    <script>
+    });
 
-        $('.navTrigger').click(function () {
-        $(this).toggleClass('active');
-        console.log("Clicked menu");
-        $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
+    $(document).ready(function () {
+      var zindex = 10;
 
-        });
+      $("div.card").click(function (e) {
+        e.preventDefault();
 
-        $(document).ready(function(){
-        var zindex = 10;
-        
-        $("div.card").click(function(e){
-            e.preventDefault();
+        var isShowing = false;
 
-            var isShowing = false;
+        if ($(this).hasClass("show")) {
+          isShowing = true
+        }
 
-            if ($(this).hasClass("show")) {
-            isShowing = true
-            }
+        if ($("div.cards").hasClass("showing")) {
+          // a card is already in view
+          $("div.card.show")
+            .removeClass("show");
 
-            if ($("div.cards").hasClass("showing")) {
-            // a card is already in view
-            $("div.card.show")
-                .removeClass("show");
-
-            if (isShowing) {
-                // this card was showing - reset the grid
-                $("div.cards")
-                .removeClass("showing");
-            } else {
-                // this card isn't showing - get in with it
-                $(this)
-                .css({zIndex: zindex})
-                .addClass("show");
-
-            }
-
-            zindex++;
-
-            } else {
-            // no cards in view
+          if (isShowing) {
+            // this card was showing - reset the grid
             $("div.cards")
-                .addClass("showing");
+              .removeClass("showing");
+          } else {
+            // this card isn't showing - get in with it
             $(this)
-                .css({zIndex:zindex})
-                .addClass("show");
+              .css({ zIndex: zindex })
+              .addClass("show");
 
-            zindex++;
-            }
-            
-        });
-        });
+          }
 
-    </script>
-  </body>
+          zindex++;
+
+        } else {
+          // no cards in view
+          $("div.cards")
+            .addClass("showing");
+          $(this)
+            .css({ zIndex: zindex })
+            .addClass("show");
+
+          zindex++;
+        }
+
+      });
+    });
+
+  </script>
+</body>
+
 </html>
