@@ -310,15 +310,19 @@ a.btn:active {
 /* Style the buttons */
 .btn {
   background-color: #a69be9;
+  font-size: 24px;
   border: none;
   color: white;
-  font-family: 'Inconsolata', monospace;
-  padding: 12px 16px;
+  font-family: 'Varela Round', sans-serif;
+  padding: 25px 25px;
+  margin: 5px;
   text-align: center;
   display: inline-block;
   transition-duration: 0.4s;
   outline: none;
   cursor: pointer;
+  top: 50%;
+  -ms-transform: translateY(-50%);
 }
 
 .btn:hover {
