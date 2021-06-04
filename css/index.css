@@ -273,7 +273,7 @@
 /*----  alumni-section  ----*/
 #alumniSection{
     text-align: center;
-    background:white;
+    background-image:radial-gradient(#192C62,rgb(31, 31, 31)) ;
   }
 #alumniSection .container{
     padding-top: 80px; 
