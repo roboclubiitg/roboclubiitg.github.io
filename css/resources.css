@@ -41,3 +41,6 @@ h4{
     left: 20%;
     transform: translate(-30%, -50%);
 }
+.all_cards{
+    background-image: url(../img/Cards_Background.jpg);
+}
