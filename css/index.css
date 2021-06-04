@@ -474,7 +474,7 @@ div.card {
   position: relative;
   text-align: left;
   transition: all 0.3s 0s ease-in;
-  width: 320px;
+  width: 500px;
   z-index: 1;
 }
 div.card img {
