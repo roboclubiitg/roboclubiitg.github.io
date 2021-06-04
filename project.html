@@ -36,11 +36,12 @@
       </div>
       <div id="mainListDiv" class="main_list">
         <ul class="navlinks">
-          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="project.html">Projects</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a href="achievements.html">Achievements</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -52,7 +53,14 @@
     </div>
   </nav>
 
-  <div class="project-section pt-3 pb-5 mt-5" id="projectSection">
+  <div class="proj-banner-section-bg-container d-flex flex-column justify-content-center " id="mainPage">
+    <div class="text-center bg-text">
+        <h1 class="banner-heading mb-3">PROJECTS</h1>
+        <h1 class="banner-sub-heading mb-3">ROBOTICS CLUB</h1>
+    </div>
+</div>
+
+  <div class="project-section pt-3 pb-5 mt-5">
     <div class="container-fluid">
       <div id="myBtnContainer">
         <button class="btn text-white" onclick="filterSelection('y21')">Year'21</button>
@@ -235,7 +243,7 @@
               <div class="card-flap flap1">
                 <div class="card-description">
                   <p style="color:blue">Ongoing</p>
-                  <p style="color:orange">Mentor: <span style="color:#000000">Nahush Bhamre</span></p>
+                  <p style="color:orange">Mentor: <span style="color:#000000" style ="font-weight: bold";>Nahush Bhamre</span></p>
                   This project aims to make an autonomous bot that will act as a boat and will collect trash or waste
                   floating on the surface of water bodies.
                 </div>
@@ -366,7 +374,7 @@
                 </div>
               </div>
             </div>
-            
+
             <h2 class="section-title text-white mt-5">INTER IIT<span class="span-title" style="color:#77E6EE">
               TECH MEET 9.0</span></h2>
   
@@ -734,8 +742,7 @@
 
             <div class="card">
               <div class="card__image-holder">
-                <img class="card__image" src="img/projects/19. rearrange_robotic_arm.png" width="317" height="240"
-                  alt="wave" />
+                <img class="card__image" src="img/projects/19. rearrange_robotic_arm.png" alt="wave" />
               </div>
               <div class="card-title">
                 <a href="#" class="toggle-info btn">
@@ -823,7 +830,7 @@
                 </div>
               </div>
             </div>
-            
+
             <h2 class="section-title text-white mt-5">INTER IIT<span class="span-title" style="color:#77E6EE">
               TECH MEET 8.0</span></h2>
 
@@ -857,6 +864,7 @@
                   </div>
                 </div>
               </div>
+
 
 
             <!--                     <div class="card">
@@ -1005,7 +1013,6 @@
                 </div>
                 <div class="card-flap flap2">
                   <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
                   </div>
                 </div>
               </div>
@@ -1034,7 +1041,6 @@
                 </div>
                 <div class="card-flap flap2">
                   <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
                   </div>
                 </div>
               </div>
@@ -1098,7 +1104,6 @@
                 </div>
                 <div class="card-flap flap2">
                   <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
                   </div>
                 </div>
               </div>
@@ -1328,7 +1333,7 @@
     </div>
   </div>
 
-  <div class="footer" id="Contact">
+  <!-- <div class="footer" id="Contact">
     <p class="footer-title"> connect with us</p>
     <hr style="border-color:white; width:150px">
     <a href="mailto:roboclubiitg@gmail.com">
@@ -1346,8 +1351,25 @@
     <a href="">
       <i class="fas fa-phone-alt footer-icon"></i>
     </a>
+  </div> -->
+
+  <div class="wrap" id="Contact">
+    <h2 class="text-white">Connect with us</h2>
+    <a class="hover-fx" href="https://www.facebook.com/robotics.iitg">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <a class="hover-fx" href="https://www.instagram.com/roboclubiitg/">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a class="hover-fx" href="https://www.linkedin.com/company/robotics-club-iitg/mycompany/">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a class="hover-fx" href="mailto:roboclubiitg@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
   </div>
 
+  
   <script>
     filterSelection("all")
     function filterSelection(c) {
