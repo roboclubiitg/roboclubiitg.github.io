@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css"/>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script src="https://kit.fontawesome.com/53e3f996b3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
 </head>
 
@@ -30,13 +33,11 @@
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="project.html">Projects</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="achievements.html">Achievements</a></li>
                     <li><a href="resources.html">Resources</a></li>
-                    <li><a href="alumni.html">Alumni</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -48,17 +49,32 @@
     </nav>
 
     <div class="banner-section-bg-container d-flex flex-column justify-content-center " id="mainPage">
-        <div class="text-center bg-text">
-            <h1 class="banner-heading mb-3"> ROBOTICS CLUB</h1>
-            <h1 class="banner-sub-heading mb-3"> IIT Guwahati</h1>
-            <p class="banner-caption mb-4">Promoting Technology, Creativity and Innovation</p>
+        
+        
+            
+        <div class="text-center bg-text  ">
+            <img src="img/only_club_logo.png" class="logo_on_top" />
+            <div class="wow flipInX ">
+                <h1 class="banner-heading mb-3"> ROBOTICS CLUB</h1>
+                <h1 class="banner-sub-heading mb-3"> IIT Guwahati</h1>
+                <p class="banner-caption mb-4">Promoting Technology, Creativity and Innovation</p>
+            </div>  
         </div>
+    
     </div>
-    <div class="about-us-section pt-3 pb-5 " id="aboutSection">
+
+    <div class="partition">
+    </div>
+    
+
+    <div class="about-us-section " id="aboutSection">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="section-title mt-5" color="black">About<span class="span-title">Us</span></h1>
+                <div class="col-3 offset-1 wall-e wow tada" data-wow-delay="0.3s">
+                    <img src="img/walle_hi.jpg"  />
+                </div>
+                <div class="col-6 offset-1 scrollOp wow slideInRight">
+                    <h1 class="section-title mt-5">About<span class="span-title">Us</span></h1>
                     <div class="sep"></div>
                     <div class="about-us-card p-3 mt-4 mb-3 text-left">
                         <p class="about-us-description ">
@@ -77,35 +93,40 @@
             </div>
         </div>
     </div>
-    <div class="event-section pb-5" id ="eventSection">
+
+    <div class="partition">
+        
+    </div>
+
+    <div class="event-section " id ="eventSection">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <h1 class="section-title mt-2">What<span class="span-title">We</span><span class="span-title" style="color:black">Do</span></h1>
-                    <div class="sep mb-4"></div>
-                    <div class="event-card shadow">
+                    <div class="sep mb-4" ></div>
+                    <div class="event-card side" >
                         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
-                            <div class="carousel-inner event-card shadow">
+                            <div class="carousel-inner event-card ">
                               <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/opencv_workshop.jpg" alt="First slide" >
-                                <div class="carousel-caption d-none d-md-block">
+                                <img class="d-inline-block " src="img/opencv_workshop.jpg" alt="First slide" >
+                                <div class="carousel-caption-adv  d-md-block">
                                     <h4 class="event-name">Opencv Workshop</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="img/ai_workshop.jpg" alt="Second slide">
-                                <div class="carousel-caption d-none d-md-block">
+                                <img class="d-inline-block " src="img/ai_workshop.jpg" alt="Second slide">
+                                <div class="carousel-caption-adv  d-md-block">
                                     <h4 class="event-name">AI Workshop</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="img/orientation.jpg" alt="Third slide">
-                                <div class="carousel-caption d-none d-md-block">
+                                <img class="d-inline-block " src="img/orientation.jpg" alt="Third slide">
+                                <div class="carousel-caption-adv  d-md-block">
                                     <h4 class="event-name">Introductory Session for Freshers</h5>
                                 </div>
                               </div>
@@ -125,27 +146,56 @@
             </div>
         </div>
     </div>
-    
-    <div class="footer" id="Contact">
-    <p class="footer-title"> connect with us</p>
-    <hr style="border-color:white; width:150px">
-    <a href="mailto:roboclubiitg@gmail.com">
-      <i class="fas fa-envelope footer-icon"></i>
-    </a>
-    <a href="https://www.facebook.com/robotics.iitg">
-      <i class="fab fa-facebook-square footer-icon"></i>
-    </a>
-    <a href="https://www.instagram.com/roboclubiitg/">
-      <i class="fab fa-instagram footer-icon"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/robotics-club-iitg/mycompany/">
-      <i class="fab fa-linkedin footer-icon"></i>
-    </a>
-    <a href="">
-      <i class="fas fa-phone-alt footer-icon"></i>
-    </a>
-  </div>
-    
+
+    <!-- Eva animation-->
+    <div class="e_background">
+        <div class="e_eve">
+            <div class="e_head">
+                <div class="e_face">
+                    <div class="e_eye e_eye-left">
+                        
+                    </div>
+                    <div class="e_eye e_eye-right">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="e_body">
+                <div class="e_arm e_arm-left">
+                    
+                </div>
+                <div class="e_arm e_arm-right">
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="e_shadow">
+            
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p class="footer-title"> connect with us</p>
+        <hr style="border-color:white; width:150px">
+        <a href=""> 
+            <i class="fas fa-envelope footer-icon"></i>
+        </a>
+        <a href=""> 
+            <i class="fab fa-facebook-square footer-icon"></i>
+        </a>
+        <a href=""> 
+            <i class="fab fa-instagram footer-icon"></i>
+        </a>
+        <a href=""> 
+            <i class="fab fa-linkedin footer-icon"></i>
+        </a>
+        <a href=""> 
+            <i class="fas fa-phone-alt footer-icon"></i>
+        </a>
+    </div> 
+
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
@@ -164,6 +214,17 @@
         });
 
     </script>
+
+    <!--script tag for creating scrolling effect-->
+    
+
+    <!--script tag for title slide effect-->
+    <script>
+        $(function(){
+            new WOW().init(); 
+        });
+    </script>
+    
 </body>
 
 </html>
