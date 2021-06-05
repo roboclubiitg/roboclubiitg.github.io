@@ -614,7 +614,7 @@ div.card.show div.flap2 {
 }
 
 /* footer section */
-/* .footer{
+.footer{
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -641,7 +641,7 @@ div.card.show div.flap2 {
   position: relative; 
   top: -5px;
   color:#00E676;
-}  */
+} 
 
 /*project footer section */
 .wrap {
