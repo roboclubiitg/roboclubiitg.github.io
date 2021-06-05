@@ -2,10 +2,7 @@
   right: 60%;
   transform: translateX(-50%);
   }
-.carousel-caption{
-top: 60%;
-transform: translateY(-50%);
-}
+
 #color-overlay {
   position: absolute;
   top: 0;
