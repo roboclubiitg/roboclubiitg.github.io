@@ -40,7 +40,7 @@
     </div>
   </nav>
     <!--Resources-->
-<header class="header">
+<header class="header top">
     <div class="start_div"></div>
         <div style="padding-bottom: 40px;" class="row align-items-center h-100 text2">
             <div class="content text" style="padding-right: 40px;" class="col-lg-6">
@@ -185,6 +185,11 @@
     </div>
   <br>
  </div>
+            <div class='scrolltop'>
+        <a href="#">
+            <div class='scroll icon'><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+        </a>
+    </div>
     
 <div class="wrap" id="Contact">
     <h2 class="text-white">Connect with us</h2>
@@ -204,6 +209,19 @@
       <i class="fas fa-phone-alt footer-icon"></i>
   </a>
   </div>
+        
+            <!--go to top-->
+    <script>
+        $(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".top").offset().top},"1000");return false})})
+    </script>
+    
     
 </body>
 </html>
