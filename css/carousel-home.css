@@ -1,1 +1,27 @@
 
+.carousel-fade {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-control-prev{
+   
+  height: 3em;
+  width: 3em !important;
+  left: 10% !important;
+  top:80% !important;
+  background-color: black;
+  border-radius: 25%;
+  
+}
+
+.carousel-control-next{
+   
+  height: 3em;
+  width: 3em !important;
+  left: 20% !important;
+  top: 80% !important;
+  background-color: black;
+  border-radius: 25%;
+
+}
