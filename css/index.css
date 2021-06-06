@@ -844,36 +844,6 @@ div.card.show div.flap2 {
 }
 
 /* footer section */
-.footer{
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
-  background-color:black;
-  background-size:cover;
-  text-align:center;
-  padding:20px;
-}
-.footer-title{
-  color:white;
-  font-family: "Quicksand";
-  font-size:30px;
-  text-transform: uppercase;
-}
-.footer-icon {
-  color: white;
-  padding-top: 7px;
-  font-size: 35px;
-  margin-left:20px;
-  margin-right:20px;
-}
-.footer-icon:hover{
-  position: relative; 
-  top: -5px;
-  color:#00E676;
-} 
-
-/*project footer section */
 .wrap {
   padding: 30px;
   text-align: center;
