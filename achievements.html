@@ -46,7 +46,7 @@
           </span>
       </div>
   </nav>
-  <div  id="teamSection">
+  <div  id="teamSection top">
     <div class="container">
   <div class="row">
     <div class ="col-12">
@@ -93,6 +93,12 @@
         </div>
       </div>
     </section>
+
+    <div class='scrolltop'>
+        <a href="#">
+            <div class='scroll icon'><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+        </a>
+    </div>
   
                                                                        
     <div class="wrap" id="Contact">
@@ -125,5 +131,18 @@
       });
 
   </script>
+
+      <!--go to top-->
+    <script>
+        $(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".top").offset().top},"1000");return false})})
+    </script>
+    
   </body>
 </html>
