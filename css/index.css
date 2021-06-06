@@ -124,7 +124,7 @@
 
 
 .section-title {
-    color: black;
+    color: white;
     font-family: "Open sans";
     font-size: 48px;
     text-transform: uppercase;
@@ -134,17 +134,16 @@
 }
 
 .event-section .section-title{
-  color: black;
+  color: white;
 }
 
 .span-title {
-  color:#120078;
+  color: white;
   font-family: "Open sans";
   font-size: 48px;
-  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
+  font-weight: 200;
   margin-left:6px;
 }
 
@@ -152,22 +151,26 @@
     width: 45px;
     height: 7px;
     border-radius: 4px;
-    background-color: #77E6EE;
+    background-color: #296dd4;
     margin-top: 10px;
     margin: auto;
+
 }
 .about-us-section {
-    background-color: #faf1e6;
-    position: relative;
+    background-image:linear-gradient( #192c62,rgb(0, 0, 0));
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0%; 
     
   }
 .scrollOp{
-  border: 1px solid black;
+  border: 2px solid gray;
   border-radius: 8%;
   margin-top: 20px;
   margin-bottom: 20px;
-  box-shadow: 10px 10px 8px #888888;
+  box-shadow: 10px 10px 8px #000000;
   opacity : 1 !important;
+  color: white;
   
 }
 
@@ -197,30 +200,31 @@
 
 
 .event-section{
-    background-color: #faf1e6;
-    position: relative;
-
-    
+  background-image:linear-gradient( #192c62,rgb(0, 0, 0));
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0%; 
+  
 }
 
 
 
 .event-card{
-    width:80vw;
+    width:75vw;
     margin:auto;
     /* border-radius: 20px; */
     margin-bottom: 20px;
 }
 
-
-
 .event-name{
     
     padding:10px;
-    color: #064420;
+    color: rgb(35,55,75);
     border-bottom: 6px solid;
-    border-color:#064420;
-    background-color: #e4efe7; 
+    border-color:rgb(35,55,75);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-size:35px; 
     margin:auto;   
     width:auto;
     height: 100%;
