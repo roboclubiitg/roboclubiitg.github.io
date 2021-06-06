@@ -52,7 +52,7 @@
 
   
                   
-   <div class="banner-section-bg-container d-flex flex-column justify-content-center " id="mainPage">
+   <div class=" top banner-section-bg-container d-flex flex-column justify-content-center " id="mainPage">
       <div class="text-center bg-text row ">
           <div class="coloumn">
               <img src="img/logoCrop_p1.png" class="logo_on_top" />
@@ -175,6 +175,13 @@
             
         </div>
     </div>
+    
+    <div class='scrolltop'>
+        <a href="#">
+            <div class='scroll icon'><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+        </a>
+    </div>
+
 
 
     <div class="wrap" id="Contact">
@@ -223,6 +230,18 @@
         $(function(){
             new WOW().init(); 
         });
+    </script>
+    
+    <!--go to top-->
+    <script>
+        $(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+            $('.scrolltop').stop(true, true).fadeOut();
+        }
+    });
+    $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".top").offset().top},"1000");return false})})
     </script>
     
 </body>
