@@ -41,7 +41,7 @@
         </div>
     </nav>
     <!-- Alumni Cards -->
-    <div class="mt-5" id="alumniSection">
+    <div class="mt-5" id="alumniSection top">
         <div class="container">
             <div class="row">
                 <div class ="col-12">
@@ -246,6 +246,12 @@
         </div>
     </div>
     
+        <div class='scrolltop'>
+        <a href="#">
+            <div class='scroll icon'><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+        </a>
+    </div>
+    
     <div class="wrap" id="Contact">
     <h2 class="text-white">Connect with us</h2>
     <a class="hover-fx" href="https://www.facebook.com/robotics.iitg">
@@ -276,7 +282,18 @@
         });
 
     </script>
-
+    <!--go to top-->
+    <script>
+        $(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".top").offset().top},"1000");return false})})
+    </script>
+    
     
 </body>
 
