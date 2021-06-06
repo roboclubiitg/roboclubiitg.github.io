@@ -63,11 +63,6 @@
   padding-top: 8%;
 }
 
-.logo_on_top{
-  width: 400px;
-  height: 400px;
-  transform: translate(20%);
-}
 
 .proj-banner-section-bg-container {
     background-image:url("../img/projects_bgi.jpg");
