@@ -210,34 +210,7 @@
     margin-bottom: 20px;
 }
 
-.carousel-item{
-  background-color: transparent;
-  overflow: visible;
-  position: relative; 
-  margin-left: 5%;
-}
 
-.carousel-item img{
-  box-shadow: 10px 10px 8px #888888;
-  opacity: 1;
-  height: 100%;
-  width: 70%;
-  margin-left: 2%;
-}
-
-.carousel-indicators {
-  visibility: hidden ;
-}
-
-.carousel-caption-adv{
-  position: absolute;
-  top:20%;
-  right: 10%;
-  width: 30%;
-  display: inline-block;
-  height: auto;
-  
-}
 
 .event-name{
     
