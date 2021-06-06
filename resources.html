@@ -212,6 +212,15 @@
         
             <!--go to top-->
     <script>
+        
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+        
         $(window).scroll(function() {
     if ($(this).scrollTop() > 50 ) {
         $('.scrolltop:hidden').stop(true, true).fadeIn();
