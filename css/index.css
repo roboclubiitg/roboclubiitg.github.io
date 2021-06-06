@@ -413,84 +413,97 @@
     text-decoration: none;
     outline: none;
 }
-.card-flyer {
-    border-radius: 6px;
-    margin-left:30px;
-    margin-right:30px;
-    border-style:solid;
-    border-color:#120078;
-    border-width:1px;
-   }
-.card-flyer .image-box{
-    background: #ffffff;
-    overflow: hidden;
-
-  }
-.card-flyer .image-box img{
-    margin-top:30px;
-    -webkit-transition:all .9s ease; 
-    -moz-transition:all .9s ease; 
-    -o-transition:all .9s ease;
-    -ms-transition:all .9s ease; 
-    width: 50%;
-    height: 150px;
-    border-radius: 400px;
-    border-style:solid;
-    border-color:#120078;
-    border-width:1px;
-
-  }
-.card-flyer:hover .image-box img{
-    opacity: 0.8;
-
-
-  }
-.card-flyer .text-box{
+#teamSection{
     text-align: center;
+    background-image:radial-gradient(#192C62,rgb(31, 31, 31)) ;
   }
-.card-flyer .text-box .text-container{
-    padding: 30px 18px;
+#teamSection .container{
+    padding-top: 80px; 
+    padding-bottom: 100px;
   }
-.card-flyer{
-    background: #FFFFFF;
-    margin-top: 50px;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
-  }
-.card-flyer:hover{
-    background: #fff;
-    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    margin-top: 50px;
-  }
-.card-flyer .text-box p{
-    margin-top: 10px;
-    margin-bottom: 12px;
-    padding-bottom: 0px; 
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #000000;
-    font-family: "Quicksand";
-    text-transform: uppercase;
-  }
-.card-flyer .text-box h6{
-    margin-top: 0px;
-    margin-bottom: 4px; 
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: "Quicksand";
-    letter-spacing: 1px;
-    color: #120078;
-  }
+#teamSection a{
+    text-decoration: none;
+    outline: none;
+}
+.team-card-flyer {
+  border-radius: 5px;
+  margin-left:30px;
+  margin-right:30px;
+  border-style:solid;
+  border-color:#120078;
+  border-width:1px;
+ }
+.team-card-flyer .image-box{
+  background-image:linear-gradient(#5DC9DB,rgb(31, 31, 31)) ;
+  overflow: hidden;
+
+}
+.team-card-flyer .image-box img{
+  margin-top:30px;
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 50%;
+  height: 150px;
+  border-radius: 400px;
+  border-style:solid;
+  border-color:#120078;
+  border-width:1px;
+
+}
+.team-card-flyer:hover .image-box img{
+  opacity: 0.8;
+
+
+}
+.team-card-flyer .text-box{
+  text-align: center;
+}
+.team-card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+.team-card-flyer{
+  background: #5DC9DB;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+.team-card-flyer:hover{
+  background: #adfff8;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+.team-card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 0px; 
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #000000;
+  font-family: "Quicksand";
+  text-transform: uppercase;
+}
+.team-card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Quicksand";
+  letter-spacing: 1px;
+  color: #120078;
+}
+
 
 
 .icon {
