@@ -149,7 +149,7 @@
     width: 45px;
     height: 7px;
     border-radius: 4px;
-    background-color: #120078;
+    background-color: ##77E6EE;
     margin-top: 10px;
     margin: auto;
 
@@ -516,7 +516,7 @@
 /*----  alumni-section  ----*/
 #alumniSection{
     text-align: center;
-    background:white;
+    background-image:radial-gradient(#192C62,rgb(31, 31, 31)) ;
   }
 #alumniSection .container{
     padding-top: 80px; 
@@ -525,6 +525,15 @@
 #alumniSection a{
     text-decoration: none;
     outline: none;
+}
+
+.alumni-section-title {
+    color: white;
+    font-family: "Open sans";
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
 }
 .card-flyer {
     border-radius: 5px;
