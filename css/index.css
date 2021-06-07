@@ -688,6 +688,27 @@
 	 height: 50px;
 }
 
+.tcar_icon {
+  color: #23374b;
+  padding-top: 7px;
+  font-size: 25px;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.tcar_icon:hover {
+position: relative; 
+top: -5px;
+color:#047bf1;
+}
+
+@media (max-width: 800px) {
+  .card-flyer {
+  margin-left:65px;
+  margin-right:65px;
+}
+}
+
 /*----  alumni-section  ----*/
 #alumniSection{
     text-align: center;
