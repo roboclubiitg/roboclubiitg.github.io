@@ -1,5 +1,13 @@
 .content{
     display: inline-block;
+    transform: translate(85%, -8%);
+    text-align: center;
+    border: black 2px solid;
+    padding-left: 10%;
+    padding-top: 10%;
+    border-radius: 15px;
+    background-color: rgba(171, 168, 201, 0.6);
+    width: 100%;
 }
 .image{
     display: inline-block;
