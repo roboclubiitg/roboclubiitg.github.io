@@ -539,19 +539,18 @@
 }
 
 
-
-.icon {
-    color: black;
+.team_icon {
+    color: white;
     padding-top: 7px;
     font-size: 25px;
     margin-left:10px;
     margin-right:10px;
 }
 
-.icon:hover {
+.team_icon:hover {
   position: relative; 
   top: -5px;
-  color:#120078;
+  color:rgb(165, 224, 235);
 }
 
 @media (max-width: 800px) {
