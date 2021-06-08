@@ -732,7 +732,7 @@ color:#047bf1;
 }
 
 .alumni-section-title {
-    color: black;
+    color: white;
     font-family: "Open sans";
     font-size: 48px;
     text-transform: uppercase;
@@ -778,7 +778,7 @@ color:#047bf1;
   padding: 30px 18px;
 }
 .alumni-card-flyer .text-box .text-container p{
-  color: white;
+  color: black;
 }
 .alumni-card-flyer{
   background: white;
