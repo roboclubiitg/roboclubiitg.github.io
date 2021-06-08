@@ -732,7 +732,7 @@ color:#047bf1;
 }
 
 .alumni-section-title {
-    color: white;
+    color: black;
     font-family: "Open sans";
     font-size: 48px;
     text-transform: uppercase;
@@ -748,7 +748,7 @@ color:#047bf1;
   border-width:1px;
  }
 .alumni-card-flyer .image-box{
-  background-image:linear-gradient(#23374b,rgb(31, 31, 31)) ;
+  background-color: white ;
   overflow: hidden;
 
 }
@@ -781,7 +781,7 @@ color:#047bf1;
   color: white;
 }
 .alumni-card-flyer{
-  background: #23374b;
+  background: white;
   margin-top: 50px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -791,7 +791,7 @@ color:#047bf1;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
 }
 .alumni-card-flyer:hover{
-  background: #23374b;
+  background: white;
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -823,7 +823,7 @@ color:#047bf1;
 
 
 .alumni_icon {
-  color: white;
+  color: #23374b;
   padding-top: 7px;
   font-size: 25px;
   margin-left:10px;
