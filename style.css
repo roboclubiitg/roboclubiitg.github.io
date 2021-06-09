@@ -25,7 +25,7 @@
 
 .banner-section-bg-container2 {
 
-  background-image: url(img/ai_workshop.jpg)
+  background-image: url(img/ai_workshop.jpg);
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -73,7 +73,7 @@ transform: translateY(-50);
   background-color: #6648b1;
   border: 1px solid #6648b1;
 }
-.btn-primary: hover{
+.btn-primary:hover{
   background-color: #563d7c;
   border: 1px solid #563d7c;
 }
