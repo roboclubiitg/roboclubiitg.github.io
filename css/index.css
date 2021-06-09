@@ -752,9 +752,9 @@ color:#047bf1;
   border-width:1px;
  }
 .alumni-card-flyer .image-box{
-  background-image:linear-gradient(#23374b,rgb(31, 31, 31)) ;
+  background: white ;
   overflow: hidden;
-
+  border-radius: 40px;
 }
 .alumni-card-flyer .image-box img{
   margin-top:30px;
@@ -770,11 +770,7 @@ color:#047bf1;
   border-width:1px;
 
 }
-.alumni-card-flyer:hover .image-box img{
-  opacity: 0.8;
 
-
-}
 .alumni-card-flyer .text-box{
   text-align: center;
 }
@@ -782,10 +778,10 @@ color:#047bf1;
   padding: 30px 18px;
 }
 .alumni-card-flyer .text-box .text-container p{
-  color: white;
+  color: black;
 }
 .alumni-card-flyer{
-  background: #23374b;
+  background: white;
   margin-top: 50px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -794,23 +790,14 @@ color:#047bf1;
   transition: all 0.2s ease-in;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
 }
-.alumni-card-flyer:hover{
-  background: #23374b;
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  margin-top: 50px;
-}
+
 .alumni-card-flyer .text-box p{
   margin-top: 10px;
   margin-bottom: 12px;
   padding-bottom: 0px; 
   font-size: 16px;
   letter-spacing: 1px;
-  color: #000000;
+  color: #000;
   font-family: "Quicksand";
   text-transform: uppercase;
 }
@@ -820,14 +807,14 @@ color:#047bf1;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Quicksand";
+  font-family: 'Mate SC', serif;
   letter-spacing: 1px;
-  color:white;
+  color:#4636ac;
 }
 
 
 .alumni_icon {
-  color: white;
+  color: #23374b;
   padding-top: 7px;
   font-size: 25px;
   margin-left:10px;
@@ -837,7 +824,7 @@ color:#047bf1;
 .alumni_icon:hover {
 position: relative; 
 top: -5px;
-color:rgb(165, 224, 235);
+color:#047bf1;
 }
 
 @media (max-width: 800px) {
