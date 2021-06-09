@@ -119,20 +119,6 @@ transform: translateY(-50);
   font-size: 4.5em;
   padding: 3rem;
 }
-.fa-facebook{
-  color: #3b5998;
-}
-.fa-twitter{
-  color: #00aced;
-}
-.fa-instagram{
-  color:#517fa4;
-}
-footer{
-  background-color:#706d74;
-  color: #222;
-  padding-top: 2rem;
-}
 hr.light{
   border-top:1px solid #d5d5d5;
   width:100%;
