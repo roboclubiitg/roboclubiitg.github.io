@@ -104,7 +104,25 @@
     background-position: center;
 }
 
+.banner-heading {
+    color: #23374b;
+    font-family: "Bree Serif";
+    font-size: 90px;
+    font-weight: 200;
+}
+.banner-sub-heading{
+    color: #23374b;
+    font-family: "Bree Serif";
+    font-size: 40px;
+    font-weight: 200;
 
+}
+.banner-caption {
+    color: #f5f7fa;
+    font-family: "Caveat";
+    font-size: 30px;
+    font-weight: 500;
+}
 
 .bg-text img{
   transform: scale(0.8);
