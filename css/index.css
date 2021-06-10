@@ -60,7 +60,7 @@
 }
 
 .nav.affix{
-  background-image:linear-gradient( #192c62,rgb(0, 0, 0));
+  background-image: white;
   background-size: cover;
   background-attachment: fixed;
   margin: 0%;
