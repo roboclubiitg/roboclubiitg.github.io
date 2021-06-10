@@ -29,49 +29,48 @@
   <div id="loader"></div>
   <div id="content">
     <nav class="nav fixed-top affix">
-    <div class="container-fluid">
-      <div class="logo">
-        <a href="#">
-          <img src="img/club_logo.png" class="robotics-logo" />
-        </a>
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="#">
+            <img src="img/club_logo.png" class="robotics-logo" />
+          </a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
       </div>
-      <div id="mainListDiv" class="main_list">
-        <ul class="navlinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="alumni.html">Alumni</a></li>
-        </ul>
-      </div>
-      <span class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-    </div>
-  </nav>
+    </nav>
 
   
                   
-   <div class=" top banner-section-bg-container d-grid justify-content-center " id="mainPage">
+    <div class=" top banner-section-bg-container d-grid justify-content-center " id="mainPage">
       <div class="text-center d-grid bg-text row " >
-          <div class="coloumn logo1" >
-              <img src="img/logoCrop_p1.png" class="logo_on_top" />
+        <div class="coloumn logo1" >
+            <img src="img/logoCrop_p1.png" class="logo_on_top" />
+        </div>
+        <div class="wow flipInX col2 coloumn">
+          <div class=" row logo2">
+            <img src="img/logocrop_p2_v2.png" class="logo_text" />
           </div>
-          <div class="wow flipInX col2 coloumn">
-            <div class=" row logo2">
-              <img src="img/logocrop_p2_v2.png" class="logo_text" />
-            </div>
-            <div class="tagline row" >
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wait.. or Innovate!!!</p>
-            </div>
-          </div> 
-          
-       </div>
-    
-  </div>
+          <div class="tagline row" >
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wait.. or Innovate!!!</p>
+          </div>
+        </div> 
+        
+      </div>
+    </div>
 
     <div class="partition">
     </div>
@@ -281,28 +280,28 @@
 
 
     <div class="wrap" id="Contact">
-    <h2 class="text-white">Connect with us</h2>
-    <a class="hover-fx" href="https://www.facebook.com/robotics.iitg">
-      <i class="fa fa-facebook"></i>
-    </a>
-    <a class="hover-fx" href="https://www.instagram.com/roboclubiitg/">
-      <i class="fa fa-instagram"></i>
-    </a>
-    <a class="hover-fx" href="https://www.linkedin.com/company/robotics-club-iitg/mycompany/">
-      <i class="fa fa-linkedin"></i>
-    </a>
-    <a class="hover-fx" href="mailto:roboclub@iitg.ac.in">
-      <i class="fa fa-envelope"></i>
-    </a>
-   <a class="hover-fx" href="https://www.youtube.com/user/RCIITG"> 
-      <i class="fab fa-youtube footer-icon"></i>
-  </a>
-    <a class="hover-fx" href="tel:6397641853"> 
-      <i class="fas fa-phone-alt footer-icon"></i>
-  </a>
-  </div>
+      <h2 class="text-white">Connect with us</h2>
+      <a class="hover-fx" href="https://www.facebook.com/robotics.iitg">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="hover-fx" href="https://www.instagram.com/roboclubiitg/">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a class="hover-fx" href="https://www.linkedin.com/company/robotics-club-iitg/mycompany/">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a class="hover-fx" href="mailto:roboclub@iitg.ac.in">
+        <i class="fa fa-envelope"></i>
+      </a>
+      <a class="hover-fx" href="https://www.youtube.com/user/RCIITG"> 
+        <i class="fab fa-youtube footer-icon"></i>
+      </a>
+        <a class="hover-fx" href="tel:6397641853"> 
+          <i class="fas fa-phone-alt footer-icon"></i>
+      </a>
+    </div>
 
-</div>
+  </div>
     
     <script>
         $(window).scroll(function() {
@@ -347,10 +346,29 @@
 
     <!--Preloader animation-->
     <script>
-      var preloader = document.getElementById('loader');
-      function preLoaderHandler(){
-          preloader.style.display = 'none';
+      
+      var loader;
+
+      function loadNow(opacity) {
+          if (opacity <= 0) {
+              displayContent();
+          } else {
+              loader.style.opacity = opacity;
+              window.setTimeout(function() {
+                  loadNow(opacity - 0.05);
+              }, 50);
+          }
       }
+
+      function displayContent() {
+          loader.style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+          loader = document.getElementById('loader');
+          loadNow(1);
+      });
     </script>
 
     

@@ -24,12 +24,13 @@
 
 
 
-#loader{
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background: url('img/loader.gif') no-repeat center;
-	z-index: 999;
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fff url('img/loader_v2.gif') no-repeat center center;
 }
 
 .navbar-inner {
