@@ -26,6 +26,8 @@
 </head>
 
 <body>
+  <div id="loader"></div>
+  <div id="content">
     <nav class="nav fixed-top affix">
     <div class="container-fluid">
       <div class="logo">
@@ -299,6 +301,8 @@
       <i class="fas fa-phone-alt footer-icon"></i>
   </a>
   </div>
+
+</div>
     
     <script>
         $(window).scroll(function() {
@@ -339,6 +343,14 @@
         }
     });
     $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".top").offset().top},"1000");return false})})
+    </script>
+
+    <!--Preloader animation-->
+    <script>
+      var preloader = document.getElementById('loader');
+      function preLoaderHandler(){
+          preloader.style.display = 'none';
+      }
     </script>
 
     
